@@ -19,26 +19,89 @@ Implements **Domain‑Driven Design**, **Sanctum Authentication**, and **Role
 
 ## 🏗️ Architecture Overview
 
+### 📂 Backend (Laravel DDD)
+
 ```
+app/
+
+├── Domains/
+
+│ ├── Posts/
+
+│ │ ├── Models/
+
+│ │ │ ├── Post.php
+
+│ │ │ └── Repositories/
+
+│ │ │ └── PostRepositoryInterface.php
+
+│ └── Users/
+
+│ └── Models/
+
+│ └── User.php
+
+├── Providers/
+
+│ └── AppServiceProvider.php
+
 src/
- ├── Domains/
- │    ├── Posts/
- │    │    ├── Entities/
- │    │    └── Repositories/
- ├── Application/
- │    └── UseCases/
- └── Infrastructure/
-      └── Persistence/
+
+├── Application/
+
+│ └── Posts/
+
+│ └── Commands/
+
+│ └── CreatePost.php
+
+├── Infrastructure/
+
+│ └── Persistence/
+
+│ └── EloquentPostRepository.php
+
+└── Interfaces/
+
+└── Http/
+
+└── Controllers/
+
+├── AuthController.php
+
+├── Controller.php
+
+└── PostController.php
 ```
 
-Frontend (Vue 3):
+### 💻 Frontend (Vue 3 + Vite)
 ```
 src/
- ├── components/
- ├── stores/
- ├── views/
- ├── router/
- └── App.vue
+
+├── assets/
+
+├── components/
+
+├── router/
+
+│ └── index.js
+
+├── stores/
+
+│ └── auth.js
+
+├── views/
+
+│ ├── Dashboard.vue
+
+│ ├── Login.vue
+
+│ ├── Register.vue
+
+├── App.vue
+
+└── main.js
 ```
 
 ---

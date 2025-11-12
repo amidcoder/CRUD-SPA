@@ -1,6 +1,6 @@
 # Laravel + Vue 3 SPA (DDD Architecture)
 
-A full-stack Single Page Application built with **Laravel 11 (API Backend)** and **Vue 3 (Frontend)**.  
+A full-stack Single Page Application built with **Laravel 12 (API Backend)** and **Vue 3 (Frontend)**.  
 Implements **Domain‑Driven Design**, **Sanctum Authentication**, and **Role‑Based Access Control** with an **Element Plus UI**.
 
 ---
@@ -47,7 +47,7 @@ src/
 
 | Layer      | Technology                     |
 |:------------|:-------------------------------|
-| Backend     | Laravel 11 + PHP 8.3           |
+| Backend     | Laravel 12 + PHP 8.3           |
 | Auth        | Laravel Sanctum                |
 | Frontend    | Vue 3 + Pinia + Element Plus   |
 | Database    | MySQL (XAMPP)                  |
@@ -56,7 +56,7 @@ src/
 
 ## ⚙️ Installation
 
-### 1️⃣ Backend (Laravel 11)
+### 1️⃣ Backend (Laravel 12)
 ```bash
 cd backend
 composer install
